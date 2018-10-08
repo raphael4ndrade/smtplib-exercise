@@ -1,12 +1,11 @@
-# The MIME module just is native in python 2.7. Doesn work with python3
 import smtplib
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEText import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 print ('Starting application ...')
 
-toaddr = fromaddr = 'raphael4ndrade@gmail.com'
-password = ''
+toaddr = fromaddr = 'email@gmail.com'
+password = 'apppassword'
 
 msg = MIMEMultipart()
 msg['From'] = fromaddr
